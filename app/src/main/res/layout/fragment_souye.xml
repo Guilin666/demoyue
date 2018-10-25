@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logoo"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@id/waterview"
+            />
+        <ImageView
+            android:layout_toRightOf="@+id/logoo"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/share"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@id/waterview"
+            />
+        <com.umeng.soexample.view.WaterView
+            android:layout_centerInParent="true"
+            android:id="@+id/waterview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:top="#ff00"
+            app:bottom="#d43c"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
